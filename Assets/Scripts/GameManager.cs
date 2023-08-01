@@ -40,8 +40,9 @@ public class GameManager : MonoBehaviour
         isTimerRunning = true;
 
         Next.SetActive(false);
-        countdownText.text = "³²Àº ½Ã°£ : " + Mathf.Round(setTime).ToString() + "ÃÊ";
-        scoreText.text = "Á¡¼ö : " + score.ToString();
+
+        countdownText.text = "ë‚¨ì€ ì‹œê°„ : " + Mathf.Round(setTime).ToString() + "ì´ˆ";
+        scoreText.text = "ì ìˆ˜ : " + score.ToString();
         level.GetComponent<Image>().sprite = Levels[stageIndex];
 
         Next.SetActive(false);
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
     {
        if (isTimerRunning)
         {
-            Debug.Log("°ÔÀÓ °æ°ú ½Ã°£ :"+Time.time);
+            Debug.Log("ê²Œì„ ê²½ê³¼ ì‹œê°„ :"+Time.time);
             Debug.Log("current Time: "+currentTime);
             currentTime += Time.deltaTime;
             if (currentTime >= startTime)
@@ -63,7 +64,7 @@ public class GameManager : MonoBehaviour
                 Rule.SetActive(false);
                 Canvas.SetActive(true);
                 Stages[0].SetActive(true);
-                // Å¸ÀÌ¸Ó Á¾·á
+                // íƒ€ì´ë¨¸ ì¢…ë£Œ
                 isTimerRunning = false;
             }
         }
@@ -75,8 +76,8 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("FailScene");
             stageIndex = 0;
         }
-        countdownText.text = "³²Àº ½Ã°£ : " + Mathf.Round(setTime).ToString() + "ÃÊ";
-        scoreText.text = "Á¡¼ö : " + score.ToString();
+        countdownText.text = "ë‚¨ì€ ì‹œê°„ : " + Mathf.Round(setTime).ToString() + "ì´ˆ";
+        scoreText.text = "ì ìˆ˜ : " + score.ToString();
         level.GetComponent<Image>().sprite = Levels[stageIndex];
 
         if (flag)
@@ -100,7 +101,7 @@ public class GameManager : MonoBehaviour
 
     public void NextStage()
     {
-        Debug.Log("NextStageÇÔ¼ö ½ÇÇà");
+        Debug.Log("NextStageí•¨ìˆ˜ ì‹¤í–‰");
         Next.SetActive(false);
         Success.SetActive(false);
         flag = true;
@@ -119,11 +120,12 @@ public class GameManager : MonoBehaviour
             else if (stageIndex == 2)
                 setTime = 10.0f;
 
-            Debug.Log("ÇöÀç ½ºÅ×ÀÌÁö : " + (stageIndex + 1));
+             Debug.Log("í˜„ì¬ ìŠ¤í…Œì´ì§€ : " + (stageIndex + 1));
+
         }
         else //Game Clear1
         {
-            Debug.Log("°ÔÀÓ Å¬¸®¾î");
+            Debug.Log("ê²Œì„ í´ë¦¬ì–´");
             SceneManager.LoadScene("ClearScene");
         }
 
