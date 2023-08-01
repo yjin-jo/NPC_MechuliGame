@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
     public float setTime;
     public Text countdownText;
     public Text scoreText;
-    public Text stageText;
     public GameObject level;
 
 
@@ -120,7 +119,6 @@ public class GameManager : MonoBehaviour
             else if (stageIndex == 2)
                 setTime = 10.0f;
 
-            //stageText.text = "Level" + (stageIndex + 1).ToString();
             Debug.Log("현재 스테이지 : " + (stageIndex + 1));
         }
         else //Game Clear1
