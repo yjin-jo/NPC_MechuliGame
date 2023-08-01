@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/shoppingScenes/ShopGameScene.unity
+    path: Assets/Scenes/GameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/shoppingScenes/ShoppingHintScene.unity
@@ -27,11 +27,29 @@ EditorBuildSettings:
     path: Assets/Scenes/shoppingScenes/BaneultalkingScenes/BaneulTalk4.unity
     guid: d7b58f0bf90228043a95b7c9e0d5dbf9
   - enabled: 1
+    path: Assets/Scenes/shoppingScenes/ShopGameScene.unity
+    guid: a1222239eceff3b409e935281713d2b3
+  - enabled: 1
     path: Assets/Scenes/shoppingScenes/BaneultalkingScenes/BaneulTalk5.unity
     guid: dcffa70341c93e14582b596fd099ee0a
   - enabled: 1
     path: Assets/Scenes/shoppingScenes/BaneultalkingScenes/BaneulTalk6.unity
     guid: 80f8d48c381ab0747bce77f9eccb307f
+  - enabled: 1
+    path: Assets/Scenes/AfterClearScene.unity
+    guid: de6668a7b1c000d40809e920d0172290
+  - enabled: 1
+    path: Assets/Scenes/ClearScene.unity
+    guid: 9d43f6068b9f2f445961a44b7cce99e9
+  - enabled: 1
+    path: Assets/Scenes/FailScene.unity
+    guid: 0134e497a91e68e4f808a87d19f326a4
+  - enabled: 1
+    path: Assets/Scenes/HintScene.unity
+    guid: 6ee80f08701c07c43bcd0708b43da8fb
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: b2bc40e029b04324e856b950b309acf4
   - enabled: 1
     path: Assets/Scenes/shoppingScenes/BaneultalkingScenes/BaneulTalk7.unity
     guid: 886d53196afac234781d0f3d52d4399b
@@ -59,4 +77,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartPart/ChuChuTalk.unity
     guid: cf09d5de6141e3448802d84617f613a7
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: 4390f1ae2e97c0c4aac271a78386f427
   m_configObjects: {}
