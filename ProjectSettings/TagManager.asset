@@ -3,14 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Fly
-  - GM
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Character
+  - 
   - Water
   - UI
   - 
@@ -19,9 +17,9 @@ TagManager:
   - 
   - 
   - 
-  - OnUI
-  - Background
-  - Rule
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -42,10 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: UI
-    uniqueID: 2392749825
-    locked: 0
-  - name: OnUI
-    uniqueID: 3758854215
     locked: 0
