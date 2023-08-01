@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
         Next.SetActive(false);
         countdownText.text = "남은 시간 : " + Mathf.Round(setTime).ToString() + "초";
         scoreText.text = "점수 : " + score.ToString();
-        stageText.text = "Level" + (stageIndex + 1).ToString();
         level.GetComponent<Image>().sprite = Levels[stageIndex];
 
         Next.SetActive(false);
