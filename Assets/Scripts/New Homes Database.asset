@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67ed1bbe675f674498d7b769b03c767, type: 3}
+  m_Name: New Homes Database
+  m_EditorClassIdentifier: 
+  home:
+  - homeSprite: {fileID: 21300000, guid: d16ab5c97f1170b499af622c319e0feb, type: 3}
+  - homeSprite: {fileID: 21300000, guid: 419c15e3e715b7c42a3a3246c33f692c, type: 3}
+  - homeSprite: {fileID: 21300000, guid: 34eb31883fd997b4db1c91c1bdfdbf88, type: 3}
+  - homeSprite: {fileID: 21300000, guid: a897b86db39e763478f34258a145d7a6, type: 3}
+  - homeSprite: {fileID: 21300000, guid: 67a8bed73bce5104ab91d5882c821fed, type: 3}
+  - homeSprite: {fileID: 21300000, guid: f76ea8bd2b9cd51499eeda9f7f865125, type: 3}
+  - homeSprite: {fileID: 21300000, guid: edd313731535e254c9827f3cd5cdb630, type: 3}
