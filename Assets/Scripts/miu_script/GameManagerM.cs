@@ -36,14 +36,14 @@ public class GameManagerM : MonoBehaviour
     public GameObject reButton3;
     private void Awake()
     {
-        Debug.Log("gameIndexº¯°æ");
-        GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 0;
+        Debug.Log("gameIndexï¿½ï¿½ï¿½ï¿½");
+        //GameObject.Find("Main_MainManager").GetComponent<Main_MainManager>().gameIndex = 0;
     }
 
     private void Start()
     {
         GameTime1 = 25;
-        Debug.Log("´Ù½Ã ½ÃÀÛ");
+        Debug.Log("ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½");
     }
     public void NextStage() //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½
     {

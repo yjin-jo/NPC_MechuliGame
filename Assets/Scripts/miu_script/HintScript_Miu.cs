@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HintScript_Miu : MonoBehaviour
 {
@@ -61,6 +62,10 @@ public class HintScript_Miu : MonoBehaviour
                     TalkM.SetActive(true);
                     nameM.SetActive(true);
                     Meaw.SetActive(true);
+                }
+                if (click_obj.name == "TalkM")
+                {
+                    SceneManager.LoadScene("MainMap_1");
                 }
             }
         }
