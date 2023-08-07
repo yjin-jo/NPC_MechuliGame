@@ -28,10 +28,11 @@ public class GameController : MonoBehaviour
     public GameObject next;
     public GameObject temporary;
 
-    void Awake()
-    {
-        puzzles = Resources.LoadAll<Sprite>("Sprites/Card");
-    }
+    //void Awake()
+    //{
+    // puzzles = Resources.LoadAll<Sprite>("Sprites/Card");
+    // Debug.Log("Puzzles 배열 길이: " + puzzles.Length);
+    //}
 
     void Start()
     {
@@ -55,6 +56,7 @@ public class GameController : MonoBehaviour
             btns.Add(objects[i].GetComponent<Button>());
             btns[i].image.sprite = bgImage;
         }
+        print(btns.Count); //10
     }
 
     void AddGamePuzzles()
@@ -70,7 +72,7 @@ public class GameController : MonoBehaviour
             }
 
             gamePuzzles.Add(puzzles[index]);
-
+           
             index++;
         }
     }

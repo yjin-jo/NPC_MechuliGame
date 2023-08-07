@@ -6,27 +6,18 @@ using UnityEngine.UI;
 public class pic_GetHint : MonoBehaviour
 {
     public GameObject Hint; // ÈùÆ® ÀÌ¹ÌÁö
-    public Button btnHint; // ÈùÆ® º¸±â ¹öÆ°
-    public string newhint; // È¹µæÇÑ ÈùÆ®
+    public GameObject HintEnv; // ÈùÆ® ºÀÅõ
+    //public Button btnHint; // ÈùÆ® º¸±â ¹öÆ°
 
-    void Start()
-    {
-        Hint.gameObject.SetActive(false);
-        btnHint.onClick.AddListener(ShowHint);
-    }
-
-    public void HintButton_clicked()
-    {
-        newhint = "rjqnrdlsms qjadlsdl dkslek.";
-        pic_DataManager.instance.nowPlayer.hints.Add(newhint); // È¹µæÇÑ ÈùÆ®¸¦ ¸®½ºÆ®¿¡ Ãß°¡
-        newhint += "\n";
-        print(newhint);
-        pic_DataManager.instance.SaveData();
-    }
-
-    void ShowHint()
+    public void ShowHint()
     {
         Hint.gameObject.SetActive(true);
+        HintEnv.gameObject.SetActive(false);
+    }
+
+    public void ShowHintEnv()
+    {
+        HintEnv.gameObject.SetActive(true);
     }
 }
 

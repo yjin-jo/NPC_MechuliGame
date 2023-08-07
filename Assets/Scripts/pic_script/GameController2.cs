@@ -28,11 +28,12 @@ public class GameController2 : MonoBehaviour
     public GameObject hintBtn;
     public GameObject temporary;
     public GameObject hint;
+    public GameObject hintEnv;
 
-    void Awake()
-    {
-        puzzles = Resources.LoadAll<Sprite>("Sprites/Card");
-    }
+    //void Awake()
+    //{
+    //puzzles = Resources.LoadAll<Sprite>("Sprites/Card");
+    //}
 
     void Start()
     {
@@ -46,6 +47,7 @@ public class GameController2 : MonoBehaviour
         hintBtn.gameObject.SetActive(false);
         temporary.gameObject.SetActive(false);
         hint.gameObject.SetActive(false);
+        hintEnv.gameObject.SetActive(false);
     }
 
     void GetButtons()
