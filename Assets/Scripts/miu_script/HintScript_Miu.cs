@@ -74,6 +74,7 @@ public class HintScript_Miu : MonoBehaviour
     public void letterClick()
     {
         letterUnopen.SetActive(true); //��ư Ŭ������ ���� ����
+        Main_MainManager.Instance.ClearStage(1); // stageClear 값을 1로 변경
     }
  
 }

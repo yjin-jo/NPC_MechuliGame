@@ -11,6 +11,7 @@ public class Main_UIClick : MonoBehaviour
     public Sprite [] RuleImageArray;
     public GameObject RuleImage;
     public int idx;
+    public GameObject[] HintImageArray; // 힌트 이미지 배열
 
     // Start is called before the first frame update
 
@@ -18,6 +19,11 @@ public class Main_UIClick : MonoBehaviour
     {
         foreach (GameObject box in Box)
             box.SetActive(false);
+
+        foreach (GameObject hintObject in HintImageArray)
+        {
+            hintObject.SetActive(false);
+        }
 
     }
 
@@ -27,9 +33,51 @@ public class Main_UIClick : MonoBehaviour
         if (idx != -1)
             RuleImage.GetComponent<Image>().sprite = RuleImageArray[idx];
     }
+
     public void HintBtnClick()
     {
+        Debug.Log("힌트 버튼 클릭");
+        Box[0].SetActive(true);
+        Debug.Log(Box[0]);
+
+        int stageClear = Main_MainManager.Instance.stageClear;
+
+        print(stageClear);
         
+        switch (stageClear)
+        {
+            case 1:
+                ShowHint(0);
+                break;
+            case 2:
+                ShowHint(1);
+                break;
+            case 3:
+                ShowHint(2);
+                break;
+            case 4:
+                ShowHint(3);
+                break;
+            case 5:
+                ShowHint(4);
+                break;
+            case 6:
+                ShowHint(5);
+                break;
+            case 7:
+                ShowHint(6);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void ShowHint(int hintIndex)
+    {
+        if (hintIndex >= 0 && hintIndex < HintImageArray.Length)
+        {
+            HintImageArray[hintIndex].SetActive(true);
+        }
     }
 
     public void SettingBtnClick()
