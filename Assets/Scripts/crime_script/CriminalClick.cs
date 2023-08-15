@@ -8,6 +8,7 @@ public class CriminalClick : MonoBehaviour
 {
     public AudioSource audioSoure;
     public GameObject chu;
+    public GameObject chuC;
     public int cIndex = 0;
     public GameObject tt;
 
@@ -67,12 +68,14 @@ public class CriminalClick : MonoBehaviour
                 if (click_obj.name == "ChuChu")
                 {
                     tt.SetActive(true);
-                    chu.SetActive(true);
+                    chu.SetActive(false);
+                    chuC.SetActive(true);
                 }
                 if (click_obj.name == "ChuChuC")
                 {
                     tt.SetActive(false);
-                    chu.SetActive(false);
+                    chuC.SetActive(false);
+                    chu.SetActive(true);
                 }
                 if (click_obj.name == "Hamster") //�ܽ��� Ŭ��
                 {

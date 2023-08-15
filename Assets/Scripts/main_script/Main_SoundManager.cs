@@ -9,6 +9,7 @@ public class Main_SoundManager : MonoBehaviour
     public static Main_SoundManager instance;
     public AudioClip[] audio_clips;
     AudioSource sfx_player;
+    public GameObject soundX;
 
     public Slider sfx_slider;
 
@@ -57,5 +58,11 @@ public class Main_SoundManager : MonoBehaviour
     void ChangeSfxSound(float value)
     {
         sfx_player.volume = value;
+        if (sfx_player.volume <= 0)
+        {
+            soundX.SetActive(true);
+        }
+        else
+            soundX.SetActive(false);
     }
 }
